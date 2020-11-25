@@ -1,11 +1,14 @@
 # Billing application for Charlene's Coffee Corner
+# Version 1.0.0
 
-Billing is a simple application made for generating invoices on the standard ouput from customer orders.
+Billing is a simple application made for generating invoices on the standard output for customer orders.
 
 # Main features
 
-  - Generate invoices on products ordered by the customer.
+  - Generates invoices on products ordered by the customer.
+  - Applies special discounts based on offers and a customer stamp card.
   - Maintains an extensible Product Catalog for the products offered to the customers.
+  
 
 ### Required software
 
@@ -14,7 +17,7 @@ Billing is a simple application made for generating invoices on the standard oup
 	
 ### Installation
 
-	Clone the content of the application repository:
+	Clone the content of the application repository and run:
 
 	$ git clone https:github.com/jlorenz2/billing
 
@@ -22,13 +25,13 @@ Billing is a simple application made for generating invoices on the standard oup
 
 	On the root folder of the installation path:
 	
-	mvn install
+	$ mvn install
 
-# Running
+# Running Billing application
 
 	On the target folder of the installation path:
 	
-	java -jar billing-1.0.0,jar <Product parameters>
+	$ java -jar billing-1.0.0,jar <Product parameters>
 	
 	Example:
 		
@@ -37,7 +40,7 @@ Billing is a simple application made for generating invoices on the standard oup
 	
 	Generic format:
 	
-	java -jar billint-1.0.0.jar [<Offering Code>[,<Extra Code>…]] [<SPACE> [<Offering Code>[,<Extra Code>…]]]…
+	java -jar billint-1.0.0.jar [<#Stamps>] [<Offering Code>[,<Extra Code>…]] [<SPACE> [<Offering Code>[,<Extra Code>…]]]…
 
 
 License
