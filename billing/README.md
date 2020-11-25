@@ -46,8 +46,5 @@ Billing is a simple application for generating invoices on the standard output f
 License
 ----
 
-MIT
-
-
 *** It's a Free Software, enjoy! **
 
