@@ -4,7 +4,7 @@ public final class Snack extends Product {
 	
 	public Snack(String code, String description, double price) {
 		super(code, description, price);
-		// TODO Auto-generated constructor stub
+
 	}
 
 }
