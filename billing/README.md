@@ -1,7 +1,7 @@
 # Billing application for Charlene's Coffee Corner
-# Version 1.0.0
+# v1.0.0
 
-Billing is a simple application made for generating invoices on the standard output for customer orders.
+Billing is a simple application for generating invoices on the standard output for customer orders.
 
 # Main features
 
@@ -10,9 +10,6 @@ Billing is a simple application made for generating invoices on the standard out
   - Maintains an extensible Product Catalog for the products offered to the customers.
   
 
-
-
-	
 ### Installation
 
 ##  Required software
