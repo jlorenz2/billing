@@ -10,8 +10,13 @@ import java.time.LocalDateTime;
 
 public class Receipt {
 	List<ReceiptLine> receiptLines = new ArrayList<ReceiptLine>();
+	
+	public static final int NO_DATE_TIME = 1;
+	public static final int PRINT_DATE_TIME = 2;
+	
 	String line; 
-	ArrayList<String> itemReceipt;
+	OrderItem orderItem;
+	
 	int i;
 	Product product;
 	ReceiptLine receiptLine;
@@ -31,12 +36,17 @@ public class Receipt {
 		  }  
 		}
 	
+	
+	List<ReceiptLine> getReceiptLines() {
+		return receiptLines;
+	}
+	
 	public Receipt(String args[], ProductCatalog productCatalog) {
 		for (String item: args) {
 			receiptLine = null;
-			itemReceipt = new ArrayList<>(Arrays.asList(item.split(",")));
+			orderItem = new OrderItem(item);
 			i = 0;
-			for (String itemElement : itemReceipt) {	
+			for (String itemElement : orderItem.getItemElements()) {	
 
 				if (isNumeric(itemElement)) {
 					stampCard = Integer.parseInt(itemElement);
@@ -87,12 +97,9 @@ public class Receipt {
 		}
 			
 	}
+
 	
-	List<ReceiptLine> getReceiptLines() {
-		return receiptLines;
-	}
-	
-	void print() {
+	void print(int date_time) {
 		double total = 0;
 		
 		System.out.println("Charlene's Coffee Corner");
@@ -100,7 +107,9 @@ public class Receipt {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
 		LocalDateTime now = LocalDateTime.now();  
 
-		System.out.println(dtf.format(now));  
+		if (date_time == PRINT_DATE_TIME)
+			System.out.println(dtf.format(now));  
+		
 		System.out.println("");
 	    	
 		for (ReceiptLine receiptLine : this.getReceiptLines()) {

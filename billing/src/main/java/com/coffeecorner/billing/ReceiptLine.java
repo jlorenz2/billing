@@ -32,7 +32,6 @@ public class ReceiptLine {
 	
 	public String getLine() {
 		return String.format("%-60s %10.2f CHF", getDescription(), getTotal());
-		//return getDescription() + " " + getTotal();
 	}
 
 }

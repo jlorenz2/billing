@@ -19,7 +19,7 @@ public class App
 		Receipt receipt = new Receipt(args, productCatalog);
 		
 		
-		receipt.print();
+		receipt.print(Receipt.PRINT_DATE_TIME);
 
     }
 }
