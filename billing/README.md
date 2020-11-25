@@ -35,12 +35,12 @@ Billing is a simple application for generating invoices on the standard output f
 	
 	Example:
 		
-		java -jar billint-1.0.0.jar CS,FM BR
+		java -jar billing-1.0.0.jar CS,FM BR
 		
 	
 	Generic format:
 	
-	java -jar billint-1.0.0.jar [<#Stamps>] [<Offering Code>[,<Extra Code>…]] [<SPACE> [<Offering Code>[,<Extra Code>…]]]…
+	java -jar billing-1.0.0.jar [<#Stamps>] [<Offering Code>[,<Extra Code>…]] [<SPACE> [<Offering Code>[,<Extra Code>…]]]…
 
 
 License
