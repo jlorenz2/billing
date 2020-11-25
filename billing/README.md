@@ -10,9 +10,9 @@ Billing is a simple application for generating invoices on the standard output f
   - Maintains an extensible Product Catalog for the products offered to the customers.
   
 
-### Installation
+##   Installation
 
-##  Required software
+###  Required software
 
 	- Apache Maven 3.6.0
     - Java jdk 1.8
@@ -21,13 +21,13 @@ Billing is a simple application for generating invoices on the standard output f
 
 		$ git clone https:github.com/jlorenz2/billing
 
-### Compiling
+##  Compiling
 
 	On the root folder of the installation path:
 	
 		$ mvn install
 
-# Running Billing application
+##  Running Billing application
 
 	On the target folder of the installation path:
 	
