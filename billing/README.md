@@ -5,33 +5,36 @@ Billing is a simple application made for generating invoices on the standard out
 
 # Main features
 
-  - Generates invoices on products ordered by the customer.
-  - Applies special discounts based on offers and a customer stamp card.
+  - Generates invoices for products ordered by the customer.
+  - Applies special discounts based on offers and the customer stamp card.
   - Maintains an extensible Product Catalog for the products offered to the customers.
   
 
-### Required software
 
-	- Apache Maven 3.6.0
-	- Java jdk 1.8
+
 	
 ### Installation
 
+##  Required software
+
+	- Apache Maven 3.6.0
+    - Java jdk 1.8
+
 	Clone the content of the application repository and run:
 
-	$ git clone https:github.com/jlorenz2/billing
+		$ git clone https:github.com/jlorenz2/billing
 
 ### Compiling
 
 	On the root folder of the installation path:
 	
-	$ mvn install
+		$ mvn install
 
 # Running Billing application
 
 	On the target folder of the installation path:
 	
-	$ java -jar billing-1.0.0,jar <Product parameters>
+		$ java -jar billing-1.0.0,jar <Product parameters>
 	
 	Example:
 		
